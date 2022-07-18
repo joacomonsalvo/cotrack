@@ -36,6 +36,7 @@ def main(slug="bitcoin"):
     market_cap = data["data"][0]["quote"]["USD"]["market_cap"]
     last_updated = data["data"][0]["quote"]["USD"]["last_updated"]
 
+
     data = [slug, symbol, price, volume_24h, percent_change_1h, percent_change_24h, [percent_change_7d, market_cap, last_updated]]
 
     return data
